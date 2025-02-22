@@ -1,0 +1,101 @@
+
+
+    .faq-container {
+        padding: 60px 0;
+        background: #E6F6FE;
+
+    }
+
+.middle-faqs{
+    width: 65%;
+    margin: auto;
+}
+/* Heading Styling */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-title span {
+    color: green;
+}
+
+/* FAQ Items */
+.faq-item {
+    background: white;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item.open {
+    border: 2px solid green;
+}
+
+.faq-question {
+    background: white;
+    padding: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    padding: 0 15px;
+    color: #333;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    padding: 10px 26px;
+    font-size: 18px;
+}
+/* .faq-item.open .faq-question{
+    height: 60px;
+} */
+/* Arrow Image */
+/* Style for the arrow container (circle) */
+.arrow {
+width: 20px; /* Set width */
+height: 20px; /* Set height */
+display: inline-block;
+border-radius: 50%; /* Makes it circular */
+background-color: #12cf1e; /* Green background */
+transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* When expanded, change the arrow and background */
+.faq-item.active .arrow {
+background-color: #2E7D32; /* Darker green */
+}
+
+.faq-item.open .arrow {
+    transform: rotate(90deg);
+}
+.faq-question{
+    height: 100px;
+}
+@media (max-width:500px) {
+    .faq-item.open .faq-answer{
+        font-size: 16px;
+    }
+    .faq-question{
+        font-size: 18px;
+    }
+    .middle-faqs{
+        width: 90%;
+    }
+}
