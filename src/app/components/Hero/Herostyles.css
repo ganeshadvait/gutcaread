@@ -36,6 +36,7 @@
     font-size: 18px;
     color: #000000; /* Gray color */
     margin-bottom: 1.5rem;
+    width: 80%;
   }
   .hero-button-review{
     display: flex;
@@ -146,5 +147,27 @@
     }
     .hero-text{
       font-size: 16px;
+      width: 100%;
     }
   }
+  .hero-title, .hero-text {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  .hero-text {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
