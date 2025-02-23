@@ -1,0 +1,150 @@
+.hero-section {
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    height: 80vh;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-direction: row;
+    }
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .hero-title span {
+    color: #22c55e; /* Green color */
+  }
+  
+  .hero-text {
+    font-size: 18px;
+    color: #000000; /* Gray color */
+    margin-bottom: 1.5rem;
+  }
+  .hero-button-review{
+    display: flex;
+    gap: 40px;
+  }
+  
+  .hero-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+    background-color: #2563eb;
+  }
+  .hero-reviews-image-rating{
+    display: flex;
+  }
+  .hero-reviews-images{
+    display: flex;
+  }
+  .hero-review {
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .review-stars {
+    color: #fbbf24; /* Yellow stars */
+    font-size: 1.2rem;
+  }
+  
+  .review-text {
+    color: #6b7280;
+    margin-left: 0.5rem;
+  }
+  
+  .image-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    place-items: flex-end;
+  }
+  
+  .image-box {
+    background-color: #d1d5db; /* Light gray */
+    border-radius: 12px;
+  }
+  
+  .image-box:nth-child(1) {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  .image-box:nth-child(2) {
+    width: 6rem;
+    height: 8rem;
+  }
+  
+  .image-box:nth-child(3),
+  .image-box:nth-child(4) {
+    width: 7rem;
+    height: 7rem;
+  }
+  
+  @media (min-width: 768px) {
+    .image-box:nth-child(1) {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    .image-box:nth-child(2) {
+      width: 8rem;
+      height: 10rem;
+    }
+  
+    .image-box:nth-child(3),
+    .image-box:nth-child(4) {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+  
+  @media (max-width:768px) {
+    .hero-title{
+      font-size: 28px;
+    }
+    .hero-section{
+      width: 100%;
+    }
+    .hero-content{
+      width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+    .image-grid{
+      width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+    .hero-text{
+      font-size: 16px;
+    }
+  }
