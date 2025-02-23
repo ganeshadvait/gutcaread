@@ -1,5 +1,4 @@
 .footer {
-    background-color: #f8f8f8;
     padding: 20px 40px;
     font-size: 14px;
     color: #7a7691;
@@ -17,6 +16,9 @@
     margin-left: 10px;
 }
 @media (max-width: 768px){
+    .footersection{
+     width: 100% !important;
+    }
 
     .footer {
         flex-direction: column; /* Stack items vertically */

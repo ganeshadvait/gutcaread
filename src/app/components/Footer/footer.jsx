@@ -3,6 +3,11 @@ import "./footer.css";
 
 export default function Footer() {
   return (
+    <section style={{
+       width: '90%',
+       margin: 'auto'
+       
+       }} className="footersection" >
     <footer className="footer">
       <div className="copyright">
         <p>Copyright © 2025 Gutcare Clinic | All Rights Reserved</p>
@@ -19,5 +24,6 @@ export default function Footer() {
         <img src="/assets/instagram-icon.png" alt="Instagram" />
       </div>
     </footer>
+    </section>
   );
 }

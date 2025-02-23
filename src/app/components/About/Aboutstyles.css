@@ -1,0 +1,106 @@
+/* General Section Styling */
+.doctors-section {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Heading and Subheading Container */
+.doctors-main-head-sub {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* Heading Styling */
+.doctors-main-heading h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Highlighted Text in Heading */
+.span-text {
+    color: #28a745; /* Green color for emphasis */
+}
+
+/* Subheading Styling */
+.doctors-main-subheading p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Doctors Information Section */
+.doctors-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Doctor Details Styling */
+.doctors-info-details {
+    text-align: left;
+    max-width: 450px;
+}
+
+/* Doctor Name */
+.doctors-info-details h3 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Doctor Specialization */
+.doctors-info-details p {
+    font-size: 18px;
+    color: #555;
+    margin: 15px 0;
+
+}
+
+/* Button Styling */
+.appointment-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+   
+}
+@media (max-width:768px) {
+    .doctors-main-subheading p {
+        font-size: 16px;
+        color: #555;
+        margin-top: 10px;
+    }
+    .doctors-main-heading h2{
+        font-size: 28px;
+    }
+    .doctors-information {
+    flex-direction: column-reverse;
+    width: 95%;
+    }
+    .doctors-info-details h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .doctors-info-details p:nth-child(1){
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .doctors-info-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    }
+    .doctors-info-details{
+        max-width: 100%;
+
+    }
+}
