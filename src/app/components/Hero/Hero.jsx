@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../button/button";
 import './Herostyles.css'
 export default function Hero () {
     return(
@@ -12,12 +13,8 @@ export default function Hero () {
         <p className="hero-text">
           Lorem ipsum dolor sit amet consectetur. magnis tristique mi lectus. Lorem ipsum dolor sit amet consectetur. magnis tristique mi lectus.Lorem ipsum dolor sit amet consectetur. magnis tristique mi lectus.
         </p>
-        <div className="hero-button-review">
-          
-          <a href="#" className="hero-button">
-            Book an appointment
-          </a>
-          
+        <div className="hero-button-review">          
+          <Button />
           <div className="hero-review">
             <div className="hero-reviews-image-rating">
               <div className="hero-review-number">
@@ -37,7 +34,11 @@ export default function Hero () {
       </div>
      
       <div className="image-grid">
-        <div className="image-box"></div>
+        <div className="image-box">
+        <Image src="/images/image.png" className="heroimage"  alt="Hero Image"  fill />
+
+
+        </div>
       </div>
     </section>
         </>

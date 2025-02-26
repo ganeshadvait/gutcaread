@@ -40,7 +40,8 @@
   }
   .hero-button-review{
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 20px;
   }
   
   .hero-button {
@@ -82,50 +83,23 @@
   
   .image-grid {
     width: 50%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-    place-items: flex-end;
+
   }
   
   .image-box {
-    background-color: #d1d5db; /* Light gray */
-    border-radius: 12px;
+    position: relative;
+    width: 100%;
+    height: 600px;
   }
-  
-  .image-box:nth-child(1) {
-    width: 8rem;
-    height: 8rem;
+  .heroimage{
+     width: 100%;
+     height: auto;
+     position: relative;
   }
-  
-  .image-box:nth-child(2) {
-    width: 6rem;
-    height: 8rem;
-  }
-  
-  .image-box:nth-child(3),
-  .image-box:nth-child(4) {
-    width: 7rem;
-    height: 7rem;
-  }
+
   
   @media (min-width: 768px) {
-    .image-box:nth-child(1) {
-      width: 10rem;
-      height: 10rem;
-    }
-  
-    .image-box:nth-child(2) {
-      width: 8rem;
-      height: 10rem;
-    }
-  
-    .image-box:nth-child(3),
-    .image-box:nth-child(4) {
-      width: 9rem;
-      height: 9rem;
-    }
+   
   }
   
   @media (max-width:768px) {
@@ -134,6 +108,8 @@
     }
     .hero-section{
       width: 100%;
+      height: 100%;
+      row-gap: 30px;
     }
     .hero-content{
       width: 100%;
@@ -149,6 +125,9 @@
       font-size: 16px;
       width: 100%;
     }
+    .image-box {
+      height: 350px;
+  }
   }
   .hero-title, .hero-text {
     opacity: 0;
@@ -171,3 +150,7 @@
     }
   }
   
+  
+  .image-box img {
+    object-fit: contain; 
+  }

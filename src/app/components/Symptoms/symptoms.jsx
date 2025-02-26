@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Button from "../button/button";
-import './Whystyles.css'
+import './symptoms.css'
 
-export default function WhyChoose () {
+export default function Symptoms () {
     return (
         <>
        <section className="whychoose-container">
@@ -12,8 +12,7 @@ export default function WhyChoose () {
 
       <div className="whychoose-content">
         <h2 className="whychoose-heading">
-          Why Choose <span className="whychoose-highlight">Gutcare</span> For
-          Your Piles Treatments?
+          Symptoms of <span className="whychoose-highlight">Piles</span>
         </h2>
         <p className="whychoose-description">
           Lorem ipsum dolor sit amet consectetur. Magna tristique mi lectus. 

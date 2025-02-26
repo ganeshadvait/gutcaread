@@ -1,0 +1,121 @@
+.happyclients{
+    padding: 70px 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-content p{
+    width: 70%;
+    align-self: center;
+    margin: auto;
+    padding-top: 12px;
+}
+.text-content:has(h2, p) {
+    text-align: center;
+}
+.review-slider-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  .review-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+    scrollbar-width: none;
+  }
+  
+  .review-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .card {
+    min-width: 280px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .personname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .image-review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .image-review img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .stars {
+    font-size: 16px;
+    color: gold;
+  }
+  
+  .nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+  
+  .nav-button:hover {
+    background-color: #0056b3;
+    z-index: 1000;
+  }
+  
+  .left {
+    position: absolute;
+    left: 10px;
+  }
+  
+  .right {
+    position: absolute;
+    right: 10px;
+  }
+  @media (max-width:768px) {
+    .text-content:has(h2, p) {
+        text-align: left;
+    }
+    .text-content p{
+        width: 100%;
+    }
+    .text-content{
+        padding-left: 25px;
+    }
+  }

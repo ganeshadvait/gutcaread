@@ -102,4 +102,7 @@
     .treatment-content-list li{
         font-size: 16px;
     }
+    .treatment{
+        padding: 20px;
+    }
 }

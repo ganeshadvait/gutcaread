@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from '../button/button';
 import './Aboutstyles.css'
 export default function About () {
     return(
@@ -25,7 +26,7 @@ export default function About () {
                     <p>MBBS, MS (General Surgery), F.I.S.C.P. (Fellow of the Indian Society of Coloproctology).</p>
                     <p>28+ years of Expertise in surgical gastroenterology and colorectal care, delivering exceptional outcomes.</p>
                     <a href="/appointment">
-                        <button className="appointment-button">Book an appointment</button>
+                        <Button />
                     </a>
                 </div>
 
@@ -33,10 +34,9 @@ export default function About () {
                 <div className="doctors-info-image">
                     <Image 
                         className="doctors-image" 
-                        src="" 
+                        src="/images/second image.png" 
                         alt="Doctor's image" 
-                        width={300} 
-                        height={300} 
+                        fill
                     />
                 </div>
             </div>

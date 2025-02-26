@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../button/button";
 import './tstyles.css'
 
 export default function Treatments ( ) {
@@ -25,12 +26,17 @@ export default function Treatments ( ) {
                     </ul>
                 </div>
                 <div className="treatment-content-button-div">
-                    <button className="appointment-button">Book an Appointment</button>
+                    <Button />
                 </div>
             </div>
-            <div className="treatment-image-div">
-                <Image src="/treatment-image.jpg" alt="Treatment Image" width={300} height={300} className="treatment-image" />
-            </div>
+            <div className="doctors-info-image treatment">
+                                <Image 
+                                    className="doctors-image" 
+                                    src="/images/second image.png" 
+                                    alt="Doctor's image" 
+                                    fill
+                                />
+                            </div>
         </section>
         </>
     )
